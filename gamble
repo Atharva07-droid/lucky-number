@@ -1,0 +1,10 @@
+import random
+a = random.randint(0,9)
+while True:
+    guess: str = input(f'enter a number between 1 to 10 ')
+    if a == int(guess):
+        print(f'you were lucky')
+        break
+    else:
+        print(f'you lose')
+        print(f'lucky number was {a}')

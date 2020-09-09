@@ -1,0 +1,19 @@
+import random
+b = 0
+c = 0
+y = 0
+a = random.randint(0,9)
+print(f'You get 5 tries for this game')
+print(f'The score will be decided as +1 for win and -1 for lose for each round')
+while y < 5:
+    y = y + 1
+    guess: str = input(f'enter a number between 1 to 10 ')
+    if a == int(guess):
+        print(f'you were lucky')
+        b = b + 1
+ #       break
+    else:
+        print(f'you lose')
+        print(f'lucky number was {a}')
+        c = c + 1
+print(f'Your total score is {b-c}')
